@@ -10,8 +10,8 @@ class RepositoriesDataSourceImpl(
     private val mapper: RepositoryMapper = RepositoryMapper()
 ):DataSources.RepositoriesDataSource {
     override fun getRepositoriesList(): Single<List<Repository>> {
-        return services.getRepositoryList().map {
-            it.map { it -> mapper.toEntity(it) }
+        return services.getRepositoryList().map {list ->
+            list.map { mapper.toEntity(it) }
         }
     }
 

@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface RepositoriesServerCalls {
 
-    @GET
+    @GET("repositories")
     fun getRepositoryList():Single<List<RepositoryGson>>
 
 }

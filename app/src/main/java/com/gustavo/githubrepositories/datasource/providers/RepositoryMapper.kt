@@ -6,9 +6,10 @@ import com.gustavo.githubrepositories.entity.Repository
 class RepositoryMapper {
     fun toEntity(repositoryGson: RepositoryGson):Repository {
         return Repository(
+            name = repositoryGson.name,
             description = repositoryGson.description,
-            user = repositoryGson.user,
-            owner = OwnerMapper().toEntity(repositoryGson.ownerGson)
+            owner = OwnerMapper().toEntity(repositoryGson.owner),
+            isFork = repositoryGson.fork
         )
     }
 }

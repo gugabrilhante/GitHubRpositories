@@ -41,6 +41,8 @@ dependencies {
     implementation appDependencies.retrofitRxJava2Adapter
     implementation appDependencies.retrofitGsonConverter
     implementation appDependencies.materialDesign
+    implementation appDependencies.glide
+    annotationProcessor appDependencies.glideProcessor
 
 
     implementation kotlinLibs.anko

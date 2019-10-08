@@ -24,6 +24,7 @@ ext {
     retrofit2Version = '2.4.0'
     rxJavaVersion = '2.2.2'
     rxAndroidVersion = '2.1.0'
+    glideVersion = "4.10.0"
 
     appDependencies = [
             gson                  : "com.google.code.gson:gson:$gsonVersion",
@@ -34,8 +35,9 @@ ext {
             retrofit              : "com.squareup.retrofit2:retrofit:$retrofit2Version",
             retrofitRxJava2Adapter: "com.squareup.retrofit2:adapter-rxjava2:$retrofit2Version",
             retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:$retrofit2Version",
-            materialDesign        : "com.google.android.material:material:$materialVersion"
-
+            materialDesign        : "com.google.android.material:material:$materialVersion",
+            glide                 : "com.github.bumptech.glide:glide:$glideVersion",
+            glideProcessor        : "com.github.bumptech.glide:compiler:$glideVersion"
 
     ]
 

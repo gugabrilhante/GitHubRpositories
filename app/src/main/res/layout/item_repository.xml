@@ -53,31 +53,6 @@
                     android:src="@drawable/branch"
                     tools:ignore="ContentDescription" />
 
-                <TextView
-                    android:id="@+id/forkTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:layout_marginLeft="3sp"
-                    tools:text="620"
-                    android:textColor="@color/colorItens"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:id="@+id/starImageView"
-                    android:layout_width="20sp"
-                    android:layout_height="25sp"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/star"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/starTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="3dp"
-                    tools:text="98"
-                    android:textColor="@color/colorItens"
-                    android:textSize="20sp" />
 
             </LinearLayout>
 
@@ -88,6 +63,7 @@
             android:orientation="vertical"
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
             android:layout_height="wrap_content"
             android:gravity="center">
 
@@ -104,14 +80,6 @@
                 android:gravity="center"
                 tools:text="username"
                 android:textColor="@color/mainTextView"
-                android:textSize="15sp" />
-            <TextView
-                android:id="@+id/userSecondNameTextView"
-                android:layout_width="wrap_content"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                tools:text="nome sobrenome"
-                android:textColor="@color/secondTextView"
                 android:textSize="15sp" />
 
         </LinearLayout>

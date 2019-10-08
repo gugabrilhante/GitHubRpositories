@@ -11,7 +11,7 @@ class RepositoriesServices {
     private val repositoriesServerCalls: RepositoriesServerCalls
 
     companion object {
-        const val BASE_URL = ""
+        const val BASE_URL = "https://api.github.com/"
     }
 
     init {

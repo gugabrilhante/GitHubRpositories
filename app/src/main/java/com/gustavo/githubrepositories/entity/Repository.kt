@@ -3,7 +3,8 @@ package com.gustavo.githubrepositories.entity
 import com.google.gson.annotations.SerializedName
 
 class Repository(
-    val description: String,
-    val user: String,
-    val owner: Owner
+    val name: String,
+    val description: String?,
+    val owner: Owner,
+    val isFork:Boolean
 )
