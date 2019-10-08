@@ -3,7 +3,7 @@ package com.gustavo.githubrepositories.features.presentation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.gustavo.githubrepositories.common.base.BaseViewModel
-import com.gustavo.githubrepositories.contracts.Interactors
+import com.gustavo.githubrepositories.contracts.Iterators
 import com.gustavo.githubrepositories.contracts.Routers
 import com.gustavo.githubrepositories.entity.Repository
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -11,8 +11,8 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
 class RepositoryListViewModel(
-    private val getRepositoryList: Interactors.GetRepositoriesList,
-    val repositoryListRouter: Routers.RepositoryListRouter
+    private val getRepositoryList: Iterators.GetRepositoriesList,
+    private val repositoryListRouter: Routers.RepositoryListRouter
 ) : BaseViewModel() {
 
     private val _repositoryListLiveData = MutableLiveData<List<Repository>>()
@@ -37,7 +37,10 @@ class RepositoryListViewModel(
                 _isLoadingLiveData.value = false
             })
         compositeDisposable.add(disposable)
+    }
 
+    fun onRepositorySelected(){
+        repositoryListRouter.goToRepositoryDetail()
     }
 
 }

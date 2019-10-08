@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/userLayout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/repositoryNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Nome do Repositorio"
+                android:textColor="@color/mainTextView"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Descrição do Repositorio"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10sp">
+
+                <ImageView
+                    android:id="@+id/forkImageView"
+                    android:layout_width="12sp"
+                    android:layout_height="23sp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorItens"
+                    android:src="@drawable/branch"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/forkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:layout_marginLeft="3sp"
+                    tools:text="620"
+                    android:textColor="@color/colorItens"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/starImageView"
+                    android:layout_width="20sp"
+                    android:layout_height="25sp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/star"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/starTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    tools:text="98"
+                    android:textColor="@color/colorItens"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userLayout"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/userNameImageView"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="username"
+                android:textColor="@color/mainTextView"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/userSecondNameTextView"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                tools:text="nome sobrenome"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -8,12 +8,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RepositoriesServices {
 
-    private val repositoriesServices:RepositoriesServices
+    private val repositoriesServerCalls: RepositoriesServerCalls
 
     companion object {
         const val BASE_URL = ""
     }
-
 
     init {
         val clientBuilder = OkHttpClient.Builder()
@@ -24,8 +23,10 @@ class RepositoriesServices {
             .addConverterFactory(GsonConverterFactory.create(Gson()))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
-        repositoriesServices = retrofit
-            .create(RepositoriesServices::class.java)
+        repositoriesServerCalls = retrofit
+            .create(RepositoriesServerCalls::class.java)
     }
+
+    fun getRepositoryList() = repositoriesServerCalls.getRepositoryList()
 
 }
