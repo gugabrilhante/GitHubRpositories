@@ -18,7 +18,8 @@ object MockData {
             Owner(
                 "login$number",
                 number,
-                "https://avatars2.githubusercontent.com/u/32128408?v=4"
+                "https://avatars2.githubusercontent.com/u/32128408?v=4",
+                ""
             ),
             number % 3 != 0
         )

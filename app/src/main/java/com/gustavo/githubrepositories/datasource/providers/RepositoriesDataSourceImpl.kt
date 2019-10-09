@@ -2,6 +2,7 @@ package com.gustavo.githubrepositories.datasource.providers
 
 import com.gustavo.githubrepositories.contracts.DataSources
 import com.gustavo.githubrepositories.datasource.api.RepositoriesServices
+import com.gustavo.githubrepositories.datasource.providers.mapper.RepositoryMapper
 import com.gustavo.githubrepositories.entity.Repository
 import io.reactivex.Single
 
@@ -13,9 +14,5 @@ class RepositoriesDataSourceImpl(
         return services.getRepositoryList().map {list ->
             list.map { mapper.toEntity(it) }
         }
-    }
-
-    override fun getRepositoryDetails() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

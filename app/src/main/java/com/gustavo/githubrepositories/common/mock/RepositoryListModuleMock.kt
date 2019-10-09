@@ -3,7 +3,7 @@ package com.gustavo.githubrepositories.common.mock
 import com.gustavo.githubrepositories.contracts.DataSources
 import com.gustavo.githubrepositories.contracts.Iterators
 import com.gustavo.githubrepositories.contracts.Routers
-import com.gustavo.githubrepositories.features.injection.RepositoryListModule
+import com.gustavo.githubrepositories.features.repositorylist.injection.RepositoryListModule
 
 class RepositoryListModuleMock:RepositoryListModule{
     override val repositoryListDataSource: DataSources.RepositoriesDataSource

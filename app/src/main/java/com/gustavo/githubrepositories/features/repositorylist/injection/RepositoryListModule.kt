@@ -1,4 +1,4 @@
-package com.gustavo.githubrepositories.features.injection
+package com.gustavo.githubrepositories.features.repositorylist.injection
 
 import com.gustavo.githubrepositories.contracts.DataSources
 import com.gustavo.githubrepositories.contracts.Iterators

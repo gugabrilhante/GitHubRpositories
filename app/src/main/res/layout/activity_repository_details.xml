@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.repositorydetails.ui.RepositoryDetailsActivity">
+    <ProgressBar
+        android:id="@+id/progressCircular"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    </ProgressBar>
+
+    <RelativeLayout
+        android:id="@+id/repositoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/userLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/userNameImageView"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="username"
+                android:textColor="@color/mainTextView"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="username"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/userLayout">
+
+            <TextView
+                android:id="@+id/repositoryNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Nome do Repositorio"
+                android:textColor="@color/mainTextView"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Descrição do Repositorio"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10sp">
+
+                <ImageView
+                    android:id="@+id/forkImageView"
+                    android:layout_width="12sp"
+                    android:layout_height="23sp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorItens"
+                    android:src="@drawable/branch"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

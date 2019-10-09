@@ -1,4 +1,4 @@
-package com.gustavo.githubrepositories.datasource.providers
+package com.gustavo.githubrepositories.datasource.providers.mapper
 
 import com.gustavo.githubrepositories.datasource.data.RepositoryGson
 import com.gustavo.githubrepositories.entity.Repository

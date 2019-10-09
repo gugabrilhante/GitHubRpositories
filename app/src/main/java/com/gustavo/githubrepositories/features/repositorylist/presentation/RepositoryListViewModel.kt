@@ -1,4 +1,4 @@
-package com.gustavo.githubrepositories.features.presentation
+package com.gustavo.githubrepositories.features.repositorylist.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -39,8 +39,8 @@ class RepositoryListViewModel(
         compositeDisposable.add(disposable)
     }
 
-    fun onRepositorySelected(){
-        repositoryListRouter.goToRepositoryDetail()
+    fun onRepositorySelected(repository: Repository) {
+        repositoryListRouter.goToRepositoryDetail(repository)
     }
 
 }

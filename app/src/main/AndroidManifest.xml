@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".features.ui.RepositoryListActivity"
+        <activity android:name=".features.repositorydetails.ui.RepositoryDetailsActivity"></activity>
+        <activity
+            android:name=".features.repositorylist.ui.RepositoryListActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.gustavo.githubrepositories.features.ui.adapter
+package com.gustavo.githubrepositories.features.repositorylist.ui.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -12,8 +12,10 @@ class RepositoryAdapter : RecyclerView.Adapter<RepositoryViewHolder>() {
             notifyDataSetChanged()
         }
 
+    var listener: RepositoryListener? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        RepositoryViewHolder(parent)
+        RepositoryViewHolder(parent, listener)
 
     override fun getItemCount(): Int = list.size
 

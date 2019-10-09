@@ -1,9 +1,10 @@
 package com.gustavo.githubrepositories.entity
 
-import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class Owner (
-    val login : String,
-    val id : Int,
-    val avatar_url : String
-    )
+data class Owner(
+    val login: String,
+    val id: Int,
+    val avatar_url: String,
+    val name: String?
+):Serializable

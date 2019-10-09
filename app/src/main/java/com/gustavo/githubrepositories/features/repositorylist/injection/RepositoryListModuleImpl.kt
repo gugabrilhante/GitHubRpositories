@@ -1,4 +1,4 @@
-package com.gustavo.githubrepositories.features.injection
+package com.gustavo.githubrepositories.features.repositorylist.injection
 
 import android.content.Context
 import com.gustavo.githubrepositories.contracts.DataSources
@@ -6,7 +6,7 @@ import com.gustavo.githubrepositories.contracts.Iterators
 import com.gustavo.githubrepositories.contracts.Routers
 import com.gustavo.githubrepositories.datasource.api.RepositoriesServices
 import com.gustavo.githubrepositories.datasource.providers.RepositoriesDataSourceImpl
-import com.gustavo.githubrepositories.features.router.RepositoryListRouterImpl
+import com.gustavo.githubrepositories.features.repositorylist.router.RepositoryListRouterImpl
 import com.gustavo.githubrepositories.interactor.GetRepositoryListInteractor
 
 class RepositoryListModuleImpl(private val context: Context) : RepositoryListModule {

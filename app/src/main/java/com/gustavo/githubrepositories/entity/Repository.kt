@@ -1,10 +1,10 @@
 package com.gustavo.githubrepositories.entity
 
-import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-class Repository(
+data class Repository(
     val name: String,
     val description: String?,
     val owner: Owner,
-    val isFork:Boolean
-)
+    val isFork: Boolean
+) : Serializable

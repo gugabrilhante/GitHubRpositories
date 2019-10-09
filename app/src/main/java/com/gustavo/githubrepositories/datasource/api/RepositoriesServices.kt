@@ -29,4 +29,6 @@ class RepositoriesServices {
 
     fun getRepositoryList() = repositoriesServerCalls.getRepositoryList()
 
+    fun getUserDatails(username: String) = repositoriesServerCalls.getUserDetails(username)
+
 }
