@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".features.repositorydetails.ui.RepositoryDetailsActivity"></activity>
+        <activity
+            android:name=".features.repositorydetails.ui.RepositoryDetailsActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".features.repositorylist.ui.RepositoryListActivity"
             android:screenOrientation="portrait">
