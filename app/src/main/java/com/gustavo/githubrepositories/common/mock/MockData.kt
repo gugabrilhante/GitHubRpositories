@@ -11,7 +11,7 @@ object MockData {
         return list
     }
 
-    private fun mockRepository(number: Int): Repository {
+    fun mockRepository(number: Int): Repository {
         return Repository(
             "desc$number",
             "user$number",
